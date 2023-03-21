@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,28 +10,71 @@
     <title>Animais em Extinção - Projeto Web</title>
     <!-- CSS -->
     <style>
-        body {
-            background-color: rgb(214, 255, 214);
-            font-family: sans-serif;
+        @font-face {
+            font-family: 'FiraSans-Regular';
+            src: url("fonts/fira-sans/FiraSans-Regular.ttf");
         }
-        p {
-            font-family: serif;
+        body {
+            background-image: url("images/fundo.jpg");
+            background-repeat: repeat;
+            font-family: 'FiraSans-Regular';
+        }
+        #titulo {
+            text-align: center;
+            background-color: rgba(0, 170, 0, 0.7);
+            color: rgb(255, 255, 255);
+            text-shadow: 2px 2px 2px #000000;
+            padding: 5px 10px 5px 10px;
+            border-radius: 20px;
+            margin: 10px;
+        }
+        section {
+            background-color: rgba(236, 236, 236, 0.7);
+            padding: 5px 10px 10px 10px;
+            border-radius: 20px;
+            margin: 10px;
+        }
+        img, ul {
+            display: inline-block;
+            border-radius: 5px;
+            list-style-type: none;
+        }
+        iframe {
+            border-radius: 10px;
         }
     </style>
 </head>
+
 <body>
-    <h1>Animais em Extinção</h1>
-    <!-- Título h2 -->
-    <h2>Este site é destinado a exibição de alguns animais em extinção</h2>
-    <hr>
-    <h2>Baleia-fin</h2>
-    <img src="images/baleia-fin.JPG" alt="Baleia-fin">
-    <!-- Link para baleia-fin -->
-    <p>A baleia-comum está ameaçada de extinção.</p>
-    <a href="baleia-fin.html" target="_blank" rel="author">Clique aqui e saiba mais!</a>
-    <h2>Mais animais vindo em breve!</h2>
-    <p>Confira também o vídeo educativo abaixo!</p>
-    <!-- Video externo -->
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/PAQIDE1lLsY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <!-- Parte superior da página -->
+    <div id="titulo">
+        <h1>Animais em Extinção</h1>
+        <!-- Título h2 -->
+        <h2>Este site é destinado a exibição de alguns animais em extinção</h2>
+    </div>
+    <section>
+        <img src="images/baleia-fin.JPG" alt="Baleia-fin" width="10%" height="10%">
+        <ul>
+            <li>
+                <h2>Baleia-fin</h2>
+            </li>
+            <li>
+                <p id="descricao">A baleia-comum está <strong>ameaçada de extinção</strong>.</p>
+                <!-- Link para baleia-fin -->
+                <a href="baleia-fin.html" target="_blank" rel="author">Clique aqui e saiba mais!</a>
+            </li>
+        </ul>
+    </section>
+    <section>
+        <h2>Mais animais vindo em breve!</h2>
+        <p>Confira também o vídeo educativo abaixo!</p>
+        <!-- Video externo -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/PAQIDE1lLsY" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+        </iframe>
+    </section>
 </body>
+
 </html>
