@@ -7,49 +7,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Refere-se ao favicon -->
     <link rel="shortcut icon" href="images/icone.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
     <title>Onça-pintada - Projeto Web</title>
-    <!-- CSS -->
-    <style>
-        @font-face {
-            font-family: 'FiraSans-Regular';
-            src: url("fonts/fira-sans/FiraSans-Regular.ttf");
-        }
-        body {
-            background-image: url("images/fundo.jpg");
-            background-repeat: repeat;
-            font-family: 'FiraSans-Regular';
-        }
-        h1 {
-            text-align: center;
-            background-color: rgba(0, 170, 0, 0.7);
-            color: rgb(255, 255, 255);
-            text-shadow: 2px 2px 2px #000000;
-            padding: 5px 10px 5px 10px;
-            border-radius: 20px;
-            margin: 10px;
-        }
-        section {
-            background-color: rgba(236, 236, 236, 0.7);
-            padding: 5px 10px 10px 10px;
-            border-radius: 20px;
-            margin: 10px;
-        }
-        img, video {
-            border-radius: 10px;
-        }
-    </style>
 </head>
 
 <body>
-    <h1>Animais em Extinção</h1>
-    <!-- Informações da baleia-comum ou baleia-fin -->
+    <header>
+        <h1>Animais em Extinção</h1>
+        <!-- Menu de navegação -->
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Página inicial</a></li>
+                <li><a href="baleia-fin.html">Baleia-fin</a></li>
+                <li><a href="onca-pintada.html">Onça-pintada</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Informações da onça-pintada -->
     <section>
         <h2>Onça-pintada</h2>
         <!-- Imagem dinâmica -->
-        <picture>
-            <source media="(min-width: 900px)" srcset="images/onca-pintada-g.JPG" type="image/png">
-            <img src="images/onca-pintada-p.JPG" alt="Onça-pintada">
-        </picture>
+        <figure class="imagem-animal">
+            <picture>
+                <source media="(min-width: 900px)" srcset="images/onca-pintada-g.JPG" type="image/png">
+                <img src="images/onca-pintada-p.JPG" alt="Onça-pintada">
+            </picture>
+            <figcaption>
+                Uma onça-pintada na floresta.
+            </figcaption>
+        </figure>
         <p>A <strong>onça-pintada ou jaguar</strong> <em>(Panthera onca)</em> é uma espécie de mamífero carnívoro, pertencente a família dos felídeos e encontrada nas Américas. É o 3º maior felino do mundo, atrás somente do tigre e do leão, além de ser o maior encontrado no continente americano. Seu ambiente principal são as florestas tropicais, geralmente abaixo dos 1200 metros de altitude. Gosta muito de nadar e está bastante associada com a presença de água. É também um importante predador no topo da cadeia alimentar e pode comer qualquer animal que seja capaz de capturar. É considerada como uma espécie <mark>quase ameaçada</mark>, pois apesar de ser amplamente distribuída geograficamente, suas populações estão diminuindo, principalmente por causa da perda e fragmentação do seu habitat. Em áreas da América Central, do Norte e na Mata Atlântica brasileira, ela pode estar em <mark>sério risco de extinção</mark>.</mark></p>
         <h3>Algumas outras características:</h3>
         <!-- Lista não ordenada -->
