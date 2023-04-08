@@ -18,14 +18,29 @@ header {
     font-family: 'Rammetto-One-Regular', Helvetica;
     color: rgb(255, 255, 255);
     text-shadow: 2px 2px 2px #000000;
-    padding: 5px 10px 5px 10px;
+    padding: 3px 15px;
     border-radius: 20px;
     margin: 10px;
 }
-header h2 {
-    font-size: 20px;
-    font-family: 'FiraSans-Regular', Helvetica;
-    padding: 0px;
+header h1 {
+    text-shadow: -3px -3px 3px #208800, 
+    -3px 3px 3px #2cbb00,
+     3px -3px 3px #208800,
+     3px 3px 3px #2cbb00;
+    letter-spacing: 2px;
+}
+div#mensagem-inicial {
+    text-align: center;
+    font-size: 10px;
+    font-style: italic;
+    color: rgb(255, 255, 255);
+    text-shadow: -1px -1px 1px #000000, 
+    -1px 1px 1px #000000,
+     1px -1px 1px #000000,
+     1px 0px 1px #000000;
+    background-color: rgba(0, 172, 0, 0.5);
+    padding: 5px 10px;
+    margin: 10px -20px;
 }
 nav#menu {
     display: block;
@@ -35,7 +50,7 @@ nav#menu {
 nav#menu ul {
     list-style: none;
     text-transform: uppercase;
-    padding: 0px;
+    padding: 0;
 }
 nav#menu li {
     display: inline-block;
@@ -59,14 +74,32 @@ section {
     border-radius: 20px;
     margin: 10px;
 }
-img, ul {
-    display: inline-block;
+section h2 {
+    font-family: 'Rammetto-One-Regular', Helvetica;
+    font-size: 20px;
+    color: rgb(41, 113, 180);
+}
+section.principal-animais {
+    padding-bottom: 20px;
+}
+img.imagem-principal {
+    margin: 20px 5px;
     border-radius: 5px;
+}
+ul.lista-principal {
+    margin: 0;
+    padding: 0 0 0 20px;
+    position: absolute;
+    display: inline-block;
     list-style-type: none;
 }
+figure.imagem-animal img {
+    border-radius: 10px;
+}
 figure.imagem-animal {
+    margin: 0;
     position: relative;
-    padding: 0px 0px 10px 0px;
+    padding: 0 0 10px 0;
 }
 figure.imagem-animal figcaption {
     font-size: 12px;
@@ -76,8 +109,22 @@ figure.imagem-animal figcaption {
 figure.imagem-animal:hover figcaption {
     opacity: 1;
 }
+div#video-responsivo {
+    position: relative;
+    padding-bottom: 350px; 
+    padding-top: 25px;
+    height: 0;
+    margin: 0 auto;
+}
 iframe {
     border-radius: 10px;
+    position: absolute;
+	top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 700px;
+    max-height: 400px;
 }
 video {
     border-radius: 10px;
@@ -101,10 +148,12 @@ table#caracteristicas td.cd {
     text-align: left;
 }
 footer#rodape {
+    font-size: 12px;
+    margin: 10px;
     background-color: rgba(236, 236, 236, 0.7);
     border-radius: 20px;
     padding: 5px 5px 5px 5px;
     text-align: center;
-    color:#555555;
+    color: #000000;
     text-shadow: 0px 0px 10px #009113;
 }
