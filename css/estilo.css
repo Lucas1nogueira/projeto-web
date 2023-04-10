@@ -64,7 +64,6 @@ nav#menu a {
 }
 nav#menu a:hover {
     color: #ff0000;
-    text-decoration: underline;
 }
 section {
     background-color: rgba(236, 236, 236, 0.9);
@@ -82,7 +81,7 @@ section.principal-animais {
 }
 img.imagem-principal {
     margin: 20px 5px;
-    border-radius: 5px;
+    border-radius: 20px;
 }
 ul.lista-principal {
     margin: 0;
